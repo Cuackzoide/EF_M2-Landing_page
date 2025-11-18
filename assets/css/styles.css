@@ -19,7 +19,7 @@ body {
   transform: translateY(-0.5vh);
 }
 .hero-section {
-  background-image: linear-gradient(darkslateblue, darkblue);
+  background-image: linear-gradient(darkslateblue, darkblue, darkslateblue);
 }
 .btn {
   color: antiquewhite;
@@ -34,19 +34,49 @@ body {
   border: 1px solid orange;
   transform: translateY(-0.5vh);
 }
+.banner {
+  background-image: linear-gradient(darkslateblue, darkblue);
+}
 .card {
   color: antiquewhite;
-  background-image: linear-gradient(darkblue, darkslateblue);
+  background-color: transparent;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s, box-shadow 0.3s;
   overflow: hidden;
 }
-
 .card:hover {
   transform: translateY(-1vh);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 .icon {
   font-size: 3rem !important;
+}
+.list-group-item {
+  background-color: darkgray;
+  border-left: 5px solid orange;
+  margin-bottom: 0.5rem;
+  border-radius: 8px !important;
+  transition: all 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+  transform: translateX(5px);
+}
+.schedule-time {
+  font-weight: 700;
+  color: orange;
+  font-size: 1.1rem;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+}
+
+footer {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 2rem 0;
 }
