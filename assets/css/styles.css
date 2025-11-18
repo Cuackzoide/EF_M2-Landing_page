@@ -76,7 +76,7 @@ body {
 }
 
 footer {
-  background-color: var(--dark-color);
+  background-color: darkslateblue;
   color: white;
   padding: 2rem 0;
 }
