@@ -275,7 +275,71 @@
         </div>
       </section>
       <!-- Formulario -->
-      <section id="contact"></section>
+      <section
+        id="registro"
+        class="container py-3 my-3"
+        aria-labelledby="registro-title"
+      >
+        <div class="row g-2 banner p-2">
+          <div class="col-lg-6 mx-auto">
+            <div class="card shadow-lg">
+              <div class="card-title py-3">
+                <h2 id="registro-title" class="section-title text-center">
+                  Regístrate
+                </h2>
+                <p class="text-center">
+                  Asegura tu lugar en Mindhub Conference 2025
+                </p>
+              </div>
+              <div class="card-body">
+                <form
+                  id="registrationForm"
+                  aria-label="Formulario de registro a la conferencia"
+                >
+                  <fieldset class="mb-3">
+                    <label for="nombre" class="form-label"
+                      >Nombre Completo</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombre"
+                      name="nombre"
+                      required
+                      aria-required="true"
+                    />
+                  </fieldset>
+                  <fieldset class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                      aria-required="true"
+                    />
+                  </fieldset>
+                  <fieldset class="mb-3">
+                    <label for="cargo" class="form-label"
+                      >Cargo/Puesto de Trabajo</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cargo"
+                      name="cargo"
+                      required
+                      aria-required="true"
+                    />
+                  </fieldset>
+                  <button type="submit" class="btn btn-cta">Registrarme</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <!-- Scripts de bootstrap -->
