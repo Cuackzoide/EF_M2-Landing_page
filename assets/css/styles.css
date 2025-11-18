@@ -1,0 +1,9 @@
+.navbar {
+  background-color: darkslateblue;
+}
+.nav-link {
+  color: antiquewhite;
+}
+.nav-link:hover {
+  color: orange;
+}
