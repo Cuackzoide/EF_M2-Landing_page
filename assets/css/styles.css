@@ -19,7 +19,7 @@ body {
   transform: translateY(-0.5vh);
 }
 .hero-section {
-  background-image: linear-gradient(darkslateblue, darkblue);
+  background-image: linear-gradient(darkslateblue, darkblue, darkslateblue);
 }
 .btn {
   color: antiquewhite;
@@ -34,15 +34,17 @@ body {
   border: 1px solid orange;
   transform: translateY(-0.5vh);
 }
+.banner {
+  background-image: linear-gradient(darkslateblue, darkblue);
+}
 .card {
   color: antiquewhite;
-  background-image: linear-gradient(darkblue, darkslateblue);
+  background-color: transparent;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s, box-shadow 0.3s;
   overflow: hidden;
 }
-
 .card:hover {
   transform: translateY(-1vh);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
