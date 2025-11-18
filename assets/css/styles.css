@@ -1,9 +1,34 @@
+body {
+  font-family: Tahoma, Verdana, sans-serif;
+  color: antiquewhite;
+  background-color: darkgrey;
+}
 .navbar {
   background-color: darkslateblue;
 }
 .nav-link {
   color: antiquewhite;
+  border-bottom: 1px solid antiquewhite;
+  transition: all 0.3s;
 }
 .nav-link:hover {
   color: orange;
+  border-bottom: 1px solid orange;
+  transform: translateY(-1vh);
+}
+.hero-section {
+  background-image: linear-gradient(darkslateblue, darkblue);
+}
+.btn {
+  color: antiquewhite;
+  background-color: transparent;
+  border: 1px solid antiquewhite;
+  border-radius: 50px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  color: orange;
+  border: 1px solid orange;
+  transform: translateY(-1vh);
 }
