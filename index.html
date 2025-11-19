@@ -301,17 +301,18 @@
                   aria-label="Formulario de registro a la conferencia"
                 >
                   <fieldset class="mb-3">
-                    <label for="nombre" class="form-label"
-                      >Nombre Completo</label
-                    >
+                    <label for="name" class="form-label">Nombre Completo</label>
                     <input
                       type="text"
                       class="form-control"
                       id="name"
-                      name="nombre"
+                      name="name"
                       required
                       aria-required="true"
                     />
+                    <small id="name-message" class="hide"
+                      >Sin numeros o caracteres especiales</small
+                    >
                   </fieldset>
                   <fieldset class="mb-3">
                     <label for="email" class="form-label">Email</label>
@@ -323,6 +324,9 @@
                       required
                       aria-required="true"
                     />
+                    <small id="email-message" class="hide"
+                      >Con formato estandar ejemplo@email.com</small
+                    >
                   </fieldset>
                   <fieldset class="mb-3">
                     <label for="job" class="form-label"
@@ -335,11 +339,13 @@
                       name="job"
                       required
                       aria-required="true"
-                    />
+                    /><small id="job-message" class="hide"
+                      >Sin numeros o caracteres especiales</small
+                    >
                   </fieldset>
                   <button
                     id="form-btn"
-                    type="button"
+                    type="submit"
                     class="btn btn-cta"
                     data-bs-toggle="modal"
                     data-bs-target="#alertModal"
@@ -355,12 +361,14 @@
               id="alertModal"
               tabindex="-1"
               aria-labelledby="alertModalLabel"
-              aria-hidden="true"
+              aria-hidden="false"
             >
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="alertModalLabel"></h1>
+                    <h1 class="modal-title fs-5" id="alertModalLabel">
+                      Registro erroneo
+                    </h1>
                     <button
                       type="button"
                       class="btn-close"
@@ -368,7 +376,10 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body"></div>
+                  <div class="modal-body">
+                    Los campos del registro son obligatorios y no se llenaron
+                    correctamente, porfavor intenta denuevo
+                  </div>
                   <div class="modal-footer">
                     <button type="button" class="btn" data-bs-dismiss="modal">
                       Close

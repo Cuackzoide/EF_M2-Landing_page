@@ -98,3 +98,6 @@ footer {
   aspect-ratio: 3/2;
   object-fit: cover;
 }
+.hide {
+  display: none;
+}
