@@ -1,7 +1,5 @@
 body {
-  font-family: Tahoma, Verdana, sans-serif;
   scroll-behavior: smooth;
-  box-sizing: border-box;
   background-color: aliceblue;
 }
 .navbar,
