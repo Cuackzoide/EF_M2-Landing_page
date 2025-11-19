@@ -307,7 +307,7 @@
                     <input
                       type="text"
                       class="form-control"
-                      id="nombre"
+                      id="name"
                       name="nombre"
                       required
                       aria-required="true"
@@ -325,20 +325,56 @@
                     />
                   </fieldset>
                   <fieldset class="mb-3">
-                    <label for="cargo" class="form-label"
+                    <label for="job" class="form-label"
                       >Cargo/Puesto de Trabajo</label
                     >
                     <input
                       type="text"
                       class="form-control"
-                      id="cargo"
-                      name="cargo"
+                      id="job"
+                      name="job"
                       required
                       aria-required="true"
                     />
                   </fieldset>
-                  <button type="submit" class="btn btn-cta">Registrarme</button>
+                  <button
+                    id="form-btn"
+                    type="button"
+                    class="btn btn-cta"
+                    data-bs-toggle="modal"
+                    data-bs-target="#alertModal"
+                  >
+                    Registrarme
+                  </button>
                 </form>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="alertModal"
+              tabindex="-1"
+              aria-labelledby="alertModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="alertModalLabel"></h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body"></div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
