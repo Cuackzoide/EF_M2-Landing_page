@@ -1,5 +1,9 @@
+html {
+  scroll-behavior: smooth !important; /* scroll suave T-T */
+  scroll-padding-top: 9vh;
+}
 body {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   background-color: aliceblue;
 }
 .navbar,
